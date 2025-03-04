@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class inventory {
+public class Inventory {
     //Class variables
 
     /* Representation of the inventory */

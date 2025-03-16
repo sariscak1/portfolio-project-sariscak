@@ -13,3 +13,26 @@ the following form: YYYY.0M.0D.
 - Designed a Playable Character Stats component
 - Designed a String Encryption component
 - Designed a Inventory component
+
+## 2025.02.19
+
+### Added
+
+- Designed a proof of concept for Inventory component
+
+### Updated
+
+- Changed design to include a print method for easier testing and showcasing
+
+## 2025.03.04
+
+### Added
+
+- Designed kernel and enhanced interfaces for Inventory component
+
+## 2025.03.16
+
+### Updated
+
+- Changed the design of the Playable Character Stats component to be more in line with the OSU discipline
+- Changed the design of the String Encryption component to be more in line with the OSU discipline

@@ -36,3 +36,9 @@ the following form: YYYY.0M.0D.
 
 - Changed the design of the Playable Character Stats component to be more in line with the OSU discipline
 - Changed the design of the String Encryption component to be more in line with the OSU discipline
+
+## 2025.03.26
+
+### Added
+
+- Designed abstract class for Inventory component

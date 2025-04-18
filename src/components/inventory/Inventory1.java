@@ -1,4 +1,4 @@
-public class inventory1 extends inventorySecondary {
+public class Inventory1 extends InventorySecondary {
     /*
      * Private members --------------------------------------------------------
      */
@@ -15,8 +15,9 @@ public class inventory1 extends inventorySecondary {
 
     /**
      * Creator of initial representation.
+     *
      * @param maxSize
-     *              the maximum size of the inventory
+     *            the maximum size of the inventory
      */
     private void createNewRep(int maxSize) {
         this.inventory = new String[maxSize];
@@ -28,11 +29,12 @@ public class inventory1 extends inventorySecondary {
 
     /**
      * One-argument constructor.
+     *
      * @param maxSize
-     *               the maximum size of the inventory
+     *            the maximum size of the inventory
      */
-    public inventory1(int maxSize) {
-        this.createNewrep(maxsize);
+    public Inventory1(int maxSize) {
+        this.createNewRep(maxSize);
         this.maxSize = maxSize;
     }
 
@@ -40,7 +42,9 @@ public class inventory1 extends inventorySecondary {
      * Standard methods -------------------------------------------------------
      */
 
-    @Override
+    /**
+     * Clears the inventory to the same size.
+     */
     public final void clear() {
         this.createNewRep(this.maxSize);
     }
@@ -52,6 +56,11 @@ public class inventory1 extends inventorySecondary {
     @Override
     public final String[] returnInventory() {
         return this.inventory;
+    }
+
+    @Override
+    public final int returnMaxSize() {
+        return this.maxSize;
     }
 
     @Override

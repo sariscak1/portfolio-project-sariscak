@@ -1,7 +1,9 @@
+package components.inventory;
+
 /**
  * Inventory Kernel component with primary methods.
  */
-public interface InventoryKernel extends Standard<Inventory> {
+public interface InventoryKernel {
 
     /**
      * Returns the current inventory as an array of strings with the strings
@@ -10,6 +12,19 @@ public interface InventoryKernel extends Standard<Inventory> {
      * @return String[] inventory
      */
     String[] returnInventory();
+
+    /**
+     * Returns the maximum size of the inventory.
+     *
+     * @return int maxSize
+     */
+    int returnMaxSize();
+
+    /**
+     * Returns the current size of the inventory
+     * 
+     * @return
+     */
 
     /**
      * Reports whether or not the inventory is empty.

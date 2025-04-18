@@ -186,12 +186,13 @@ will likely refine your design to make your implementation easier to use.
   - **Description**:
     - Stores a list of traits of a playable player in a video game
   - **Kernel Methods**:
-    - void levelUp() : levels up the player and all their stats
+    - int calculateDamage() : calculates the damage based off of players current level
     - boolean isDead() : tells whether or not player health is below zero
   - **Secondary Methods**:
-    - int calculateDamage(int modifier) : calculates the damage based off of players current level and a modifier if needed
-    - void decreaseHealth(int damage, int modifier) : calculates the amount of damage taken and applies it to the playe health
-    - void healHealth(int heal) : applies healing to the health of the character
+    - int calculateCombo(int numberOfHits) : calculates and returns the damage based off the number of successful hits
+    - void decreaseHealth(int damage, int modifier) : calculates the amount of damage taken and applies it to the playr health
+    - void healHealth(int heal) : applies healing to the health of the character (Player must not be dead)
+    - void levelUp() : levels up the player and all their stats
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
@@ -210,10 +211,11 @@ will likely refine your design to make your implementation easier to use.
   - **Description**:
     - Encrypts a given string into an unreadable mess using a cryptographic algorithim
   - **Kernel Methods**:
-    - N generateKey() : generates a key to be used in the encryption and decryption
+    - T generateKey() : generates a key to be used in the encryption and decryption
+    - T getKey() : returns the key generated
   - **Secondary Methods**:
     - String encrypt(String sentence) : generates an encrypted string to be returned
-    - String decrypt(String encryption, N key) : uses the given key to decrypt a jumbled string
+    - String decrypt(String encryption, T key) : uses the given key to decrypt a jumbled string
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
@@ -239,6 +241,7 @@ will likely refine your design to make your implementation easier to use.
     - void addItem(N item) : adds an item to the inventory
     - N removeItem(N item) : removes an item from the inventory
     - N getItem(String name) : returns an item based off of its name
+    - int numberOfItems(String name) : returns the amount of a specific item in an inventory
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:

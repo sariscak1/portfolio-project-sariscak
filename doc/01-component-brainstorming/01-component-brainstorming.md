@@ -241,6 +241,7 @@ will likely refine your design to make your implementation easier to use.
     - void addItem(N item) : adds an item to the inventory
     - N removeItem(N item) : removes an item from the inventory
     - N getItem(String name) : returns an item based off of its name
+    - int numberOfItems(String name) : returns the amount of a specific item in an inventory
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:

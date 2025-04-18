@@ -1,7 +1,7 @@
 /**
  * Inventory Kernel component with primary methods.
  */
-public interface InventoryKernel {
+public interface InventoryKernel extends Standard<Inventory> {
 
     /**
      * Returns the current inventory as an array of strings with the strings

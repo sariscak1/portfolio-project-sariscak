@@ -42,3 +42,9 @@ the following form: YYYY.0M.0D.
 ### Added
 
 - Designed kernel implementation for inventory component
+=======
+## 2025.03.26
+
+### Added
+
+- Designed abstract class for Inventory component

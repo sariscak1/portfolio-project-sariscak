@@ -21,12 +21,6 @@ public interface InventoryKernel {
     int returnMaxSize();
 
     /**
-     * Returns the current size of the inventory
-     * 
-     * @return
-     */
-
-    /**
      * Reports whether or not the inventory is empty.
      *
      * @return true if String[] inventory is empty

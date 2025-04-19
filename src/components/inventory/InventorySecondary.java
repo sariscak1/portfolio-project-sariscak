@@ -1,5 +1,8 @@
 package components.inventory;
 
+/**
+ * Layered implementations of secondary methods for {@code Inventory}.
+ */
 public abstract class InventorySecondary implements Inventory {
 
     /*
@@ -18,13 +21,13 @@ public abstract class InventorySecondary implements Inventory {
     // CHECKSTYLE: ALLOW THIS METHOD TO BE OVERRIDDEN
     @Override
     public String toString() {
-        String printLine = "";
+        String printLine = "[";
         String[] inventory = this.returnInventory();
         int maxSize = this.returnMaxSize();
         for (int i = 0; i < maxSize; i++) {
-            printLine = printLine + inventory[i] + ",";
+            printLine = printLine + inventory[i] + ", ";
         }
-        printLine = printLine.substring(0, printLine.length() - 2);
+        printLine = printLine.substring(0, printLine.length() - 2) + "]";
         return printLine;
     }
 

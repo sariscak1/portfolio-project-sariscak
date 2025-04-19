@@ -1,3 +1,8 @@
+package components.inventory;
+
+/**
+ * {@code Inventory} represented as an array.
+ */
 public class Inventory1 extends InventorySecondary {
     /*
      * Private members --------------------------------------------------------
@@ -21,6 +26,9 @@ public class Inventory1 extends InventorySecondary {
      */
     private void createNewRep(int maxSize) {
         this.inventory = new String[maxSize];
+        for (int i = 0; i < maxSize; i++) {
+            this.inventory[i] = "";
+        }
     }
 
     /*
@@ -67,7 +75,7 @@ public class Inventory1 extends InventorySecondary {
     public final boolean isEmpty() {
         boolean isEmpty = true;
         int i = 0;
-        while (isEmpty && i > this.maxSize) {
+        while (isEmpty && i < this.maxSize) {
             if (!this.inventory[i].equals("")) {
                 isEmpty = false;
             }
@@ -80,7 +88,7 @@ public class Inventory1 extends InventorySecondary {
     public final boolean isFull() {
         boolean isFull = true;
         int i = 0;
-        while (isFull && i > this.maxSize) {
+        while (isFull && i < this.maxSize) {
             if (this.inventory[i].equals("")) {
                 isFull = false;
             }
